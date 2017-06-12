@@ -1,6 +1,6 @@
 # omxplayer-controll
 
-Controll omxplayer with native dbus
+Control omxplayer with native dbus
 
 
 ## Installation
@@ -13,7 +13,7 @@ npm install omxplayer-controll [--save]
 ## Usage
 
 
-Short example running a video getting the status every 5 seconds and listeing to the aboutToFinis signal
+Short example running a video getting the status every 5 seconds and listening to the aboutToFinish signal
 
 ```js
 var omxp = require('omxplayer-controll');
@@ -68,11 +68,11 @@ omxp.setAspectMode(function(err){});
 ```
 
 ### Other commands
-Change de Alpha of the current window the value must be between 0 and 255
+Change the Alpha of the current window the value; must be between 0 and 255
 ```js
 omxp.setAlpha(alpha_value, function(err){});
 ```
-Set the position of the window, only works in non full screen.
+Set the position of the window; only works in non full screen.
 ```js
 omxp.setVideoPos(x1, y1, x2, y2, function(err){});
 ```
@@ -80,7 +80,7 @@ Crop the video inside the window.
 ```js
 omxp.setVideoCropPos(x1, y1, x2, y2, function(err){});
 ```
-Set the aspect mode for the video, must be one of the following:
+Set the aspect mode for the video; must be one of the following:
    'letterbox', 'fill', 'stretch', 'default'
 ```js
 omxp.setAspectMode(aspect, function(err){});
